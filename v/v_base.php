@@ -1,22 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title><?=$title?></title>
+<?php require_once('v/partials/_head.php') ?>
 </head>
 <body>
 
-<div id="header"><h1>Blog</h1></div>
+<header><h1>Playgraund Blog</h1></header>
 
-<div id="menu">
-    <a href="index.php">Home</a>|
-    <a href="index.php?c=edit">Editor</a>
-</div>
+<?php require_once('v/partials/_nav.php') ?>
 
-<div id="content">
+<main>
     <ul>
         <?=$content?>
     </ul>
-
-</div>
+</main>
 </body>
 </html>
